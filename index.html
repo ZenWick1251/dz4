@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="customerName">Customer Name:</label><br>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+
+        <label for="customerAddress">Customer Address:</label><br>
+        <input type="text" id="customerAddress" name="customerAddress" required><br><br>
+
+        <label for="customerPhone">Customer Phone:</label><br>
+        <input type="tel" id="customerPhone" name="customerPhone" required pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+
+        <button type="button" onclick="addOrder()">Add Order</button>
+        <button type="button" onclick="displayOrders()">Show All Orders</button>
+    <h2>Orders List:</h2>
+    <ul id="ordersList"></ul>
+
+
+        <script src="script.js"></script>
+</body>
+</html>
